@@ -1,201 +1,250 @@
-/*@font-face {
-  font-family: "Libre Baskerville";
-  src: url("<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital@1&family=Great+Vibes&family=Hind&family=Libre+Baskerville&display=swap" rel="stylesheet">");
-}*/
 *{
-    box-sizing: border-box;
-  }
-  h1,h2,h3,
-  ul,ol,
-  p,
-  img {
-      margin-bottom: 1.5rem;
-  }
-  body {
-    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.125rem;
-    line-height: 1.5;
-    color: #444349;
-  }
-  .locations,
-  .program,
-  .gifts,
-  .faq,
-  .contact {
-    width: 95%;
-    margin: 1.5rem auto;
-    padding: .5rem 1rem;
-    text-align: center;
-  }
-  h1,
-  h2 {
-    font-family: 'Great Vibes', cursive;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  a {
-    text-decoration: none;
-    color: #bd806e;
-  }
-  a:hover {
-    color: #eda087;
-    transition: color .15s ease-in-out;
-  }
-  /*HEADER STYLES*/
+  box-sizing: border-box;
+}
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/*HEADER STYLES*/
+
 .cover {
-    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
-    display: table;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  .hero-text-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }  
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+.hero-text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+  font-family: 'Great Vibes', cursive;
+}
+
+@media (min-width: 768px) {
+  
   .hero-text {
-    margin: 0 auto;
-    padding: .625rem;
-    color: hsla(0,0%,100%,.9);
-    background: hsla(100,0%,0%,.5);
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
   }
   .hero-text h1 {
-    font-size: 3.15rem;
-    color: #d2ba87;
-    margin-bottom: 0;
-  }
+    font-size: 7rem;
+  } 
+}
+
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+@media (min-width: 768px) {
+  
   .tagline {
-    font-size: 1.25rem;
-    letter-spacing: .15rem;
+    text-transform: uppercase;
   }
-  .tagline::after {
-    display: block;
-    content: "";
-    background-color: #fff;
-    height: 1px;
-    width: 12.515625rem;
-    margin: .5rem auto;
-  }
-  .date {
-    font-size: 1.25rem;
-    letter-spacing: .15rem;
-    vertical-align: middle;
-  }
-  .date::before,
-  .date::after {
-    display: inline-block;
-    content: "";
-    background-color: #fff;
-    height: 1px;
-    width: 1.5rem;
-    vertical-align: middle;
-    margin: 0 .5rem;
-  }
-  @media (min-width: 768px) {
-    .cover {
-      background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
-    }  
-  }  
-  @media (min-width: 768px) {
   
-    .hero-text {
-      padding: 1.25rem;
-      border-radius: 4px;
-      width: 50%;
-    }
-    .hero-text h1 {
-      font-size: 7rem;
-    } 
-  }
-  @media (min-width: 768px) {
-  
-    .tagline {
-      text-transform: uppercase;
-    }
-  
-  }
-  /*LOCATIONS STYLES*/
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/*LOCATIONS STYLES*/
+
+.locations h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .blurb img {
-    height: 7.5rem;
+   height: 7.5rem;
+}
+
+.blurb h3 {
+  font-weight: 700;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
   }
-  .blurb h3 {
-    font-weight: 700;
-  }
-  .blurb div {
-    font-family: 'Muli', sans-serif;
-  }
+    
   .blurb::after {
-    content: "";
-    display: block;
-    height: .1875rem;
-    width: 25vw;
-    margin: 1.5rem auto;
-    background-color: #444349;
-  }
-  @media (min-width: 768px) {
-    .blurb {
-      display: inline-block;
-      width: 30%;
-      padding: 1.5rem;
-      margin: .5rem;
-    }  
-    .blurb::after {
-      display: none;
-    } 
-  }
-  /*PROGRAM STYLES*/
+    display: none;
+  } 
+}
+
+/*PROGRAM STYLES*/
+
 .program {
-    width: 100vw;
-    text-align: left;
-    background: hsla(100,0%,0%,.6);
-    color: #d2ba87;
-    font-family: 'Muli', sans-serif;
-  }
-  .program h2 {
-    font-family: 'Great Vibes', cursive;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .program p {
-    font-style: italic;
-  }
-  .program ul {
-    letter-spacing: .025rem;
-  }
-  @media (min-width: 768px) {
-    .program-wrapper {
-      width: 30vw;
-      margin: 0 auto;
-    } 
-  }
-  /*GIFTS STYLES*/
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  } 
+}
+
+/*GIFTS STYLES*/
+
+.gifts h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .gifts img {
   height: 7.5rem;
 }
+
 .gifts p:last-child {
   margin-bottom: 0;
 }
+
 /*FAQ STYLES*/
+
 .faq {
   background: hsla(100,0%,0%,.6);
   color: #d2ba87;
   width: 100vw;
   text-align: center;
 }
+
 .faq h2 {
   margin-top: 1rem;
 }
+
 .faq p {
   font-family: 'Muli', sans-serif;
   text-align: left;
 }
+
 .question-group::after {
   content: "";
   display: block;
@@ -204,13 +253,16 @@
   margin: 1.5rem auto;
   background-color: #d2ba87;
 }
+
 .question {
   font-weight: 700;
   margin-bottom: .5rem;
 }
+
 .answer {
   margin-bottom: 1.5rem;
 }
+
 @media (min-width: 768px) {
   .question-group {
     display: inline-block;
@@ -226,7 +278,9 @@
     text-align: left;
   }
 }
+
 /*FOOTER STYLES*/
+
 footer {
   height: 10vh;
   width: 100vw;
@@ -237,17 +291,21 @@ footer {
   text-align: center;
   font-size: .875rem;
 }
+
 .footer-wrapper {
   display: table-cell;
   vertical-align: middle;
   padding: .5rem 1rem;
 }
+
 footer p {
   margin-bottom: 0;
 }
+
 footer small {
   line-height: 1.5;
 }
+
 @media (min-width: 768px) {
   footer {
     min-height: 7vh;
